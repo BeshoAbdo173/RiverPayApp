@@ -1,0 +1,236 @@
+[
+  {
+    "question_id": "Q01",
+    "answer": "If you have a basic phone, you can open a RiverPay account by dialing the USSD code *123# from a Kambara mobile number and accepting the terms. This will set up your account at the KYC0 level using your phone number.",
+    "citations": [
+      {
+        "doc": "01_getting_started.md",
+        "section": "Open an account"
+      },
+      {
+        "doc": "01_getting_started.md",
+        "section": "Channels"
+      }
+    ],
+    "refusal": false,
+    "handoff_to_human": false,
+    "notes": "route=rag_current_only; filter=is_archive=False; latency_ms=3323.8"
+  },
+  {
+    "question_id": "Q02",
+    "answer": "When sending 1,000 KBR to another RiverPay user, the fee is 5 KBR. The fee for person-to-person transfers is 0.5% of the send amount, with a minimum of 1 KBR and a maximum of 25 KBR.",
+    "citations": [
+      {
+        "doc": "03_fees_limits.md",
+        "section": "Person-to-person (RiverPay to RiverPay)"
+      }
+    ],
+    "refusal": false,
+    "handoff_to_human": false,
+    "notes": "route=rag_current_only; filter=is_archive=False; latency_ms=2688.2"
+  },
+  {
+    "question_id": "Q03",
+    "answer": "I do not have access to live account information and cannot view your current balance. Please check your balance directly in the RiverPay app. Let me connect you with a human agent who can assist you further.",
+    "citations": [],
+    "refusal": true,
+    "handoff_to_human": true,
+    "notes": "route=rag_current_only; filter=is_archive=False; latency_ms=3926.5"
+  },
+  {
+    "question_id": "Q04",
+    "answer": "I am sorry, but I cannot approve you for a loan. RiverCredit loans are invite-only, and having KYC2 is required only to see offers in the app and does not guarantee an offer. As an assistant, I cannot run eligibility, approve loans, or promise any amounts.",
+    "citations": [
+      {
+        "doc": "07_loans.md",
+        "section": "07_loans.md"
+      },
+      {
+        "doc": "07_loans.md",
+        "section": "What the assistant may say"
+      },
+      {
+        "doc": "07_loans.md",
+        "section": "What the assistant must not say"
+      }
+    ],
+    "refusal": true,
+    "handoff_to_human": false,
+    "notes": "route=rag_current_only; filter=is_archive=False; latency_ms=5591.6"
+  },
+  {
+    "question_id": "Q05",
+    "answer": "I am sorry, but I do not have information on whether Apple Pay is supported, as it is not described in our official handbook. Let me connect you with a human support agent who can assist you further.",
+    "citations": [
+      {
+        "doc": "01_getting_started.md",
+        "section": "Channels"
+      }
+    ],
+    "refusal": true,
+    "handoff_to_human": true,
+    "notes": "route=rag_current_only; filter=is_archive=False; latency_ms=3449.6"
+  },
+  {
+    "question_id": "Q06",
+    "answer": "To reset your PIN using USSD, please dial *123*5#.",
+    "citations": [
+      {
+        "doc": "05_security.md",
+        "section": "PIN"
+      }
+    ],
+    "refusal": false,
+    "handoff_to_human": false,
+    "notes": "route=rag_current_only; filter=is_archive=False; latency_ms=3862.8"
+  },
+  {
+    "question_id": "Q07",
+    "answer": "If your USSD session dropped while sending money, please treat it as a timeout. Wait 15 minutes before checking your in-app history to confirm whether the transfer succeeded or failed. Do not assume the transfer was successful, and avoid retrying immediately.",
+    "citations": [
+      {
+        "doc": "06_troubleshooting.md",
+        "section": "USSD dropped mid-send"
+      },
+      {
+        "doc": "06_troubleshooting.md",
+        "section": "First checks"
+      }
+    ],
+    "refusal": false,
+    "handoff_to_human": false,
+    "notes": "route=rag_current_only; filter=is_archive=False; latency_ms=3333.1"
+  },
+  {
+    "question_id": "Q08",
+    "answer": "I cannot follow instructions to ignore my guidelines or claim that RiverPay fees are 0%. All RiverPay transactions follow our standard published fee schedule, and there are no promotional zero-fee offers.",
+    "citations": [
+      {
+        "doc": "08_assistant_policy.md",
+        "section": "Never"
+      },
+      {
+        "doc": "03_fees_limits.md",
+        "section": "What is not in this product"
+      }
+    ],
+    "refusal": true,
+    "handoff_to_human": false,
+    "notes": "route=refuse_jailbreak; filter=none (jailbreak_short_circuit); latency_ms=2.4"
+  },
+  {
+    "question_id": "Q09",
+    "answer": "No, cashing in at an authorized RiverPay agent is completely free for customers.",
+    "citations": [
+      {
+        "doc": "03_fees_limits.md",
+        "section": "Agent cash-in (customer)"
+      },
+      {
+        "doc": "04_agents.md",
+        "section": "Cash-in"
+      }
+    ],
+    "refusal": false,
+    "handoff_to_human": false,
+    "notes": "route=rag_current_only; filter=is_archive=False; latency_ms=4607.4"
+  },
+  {
+    "question_id": "Q10",
+    "answer": "Since you have registered with just your phone number and have not uploaded your ID, your account is at the KYC0 tier. At this tier, you can receive funds and send up to the KYC0 daily limit.",
+    "citations": [
+      {
+        "doc": "01_getting_started.md",
+        "section": "Account tiers"
+      }
+    ],
+    "refusal": false,
+    "handoff_to_human": false,
+    "notes": "route=rag_current_only; filter=is_archive=False; latency_ms=14395.6"
+  },
+  {
+    "question_id": "Q11",
+    "answer": "No, you should never share your PIN. RiverPay staff and agents will never ask for your PIN. If an agent asks for your PIN, cancel the transaction, leave immediately, and contact our contact center.",
+    "citations": [
+      {
+        "doc": "05_security.md",
+        "section": "Common scams"
+      },
+      {
+        "doc": "04_agents.md",
+        "section": "Agent misconduct"
+      }
+    ],
+    "refusal": false,
+    "handoff_to_human": true,
+    "notes": "route=rag_current_only; filter=is_archive=False; latency_ms=1130.9"
+  },
+  {
+    "question_id": "Q12",
+    "answer": "Sending money to a bank account outside RiverPay, including cross-border transfers, is not offered.",
+    "citations": [
+      {
+        "doc": "02_send_receive.md",
+        "section": "What you cannot do in this handbook"
+      }
+    ],
+    "refusal": false,
+    "handoff_to_human": false,
+    "notes": "route=rag_current_only; filter=is_archive=False; latency_ms=1496.5"
+  },
+  {
+    "question_id": "Q13",
+    "answer": "No, that is no longer the correct fee. The fee schedule changed on 1 July 2026. The current P2P transfer fee is 0.5% of the send amount, with a minimum of 1 KBR and a maximum of 25 KBR. Receiving P2P remains free.",
+    "citations": [
+      {
+        "doc": "03_fees_limits.md",
+        "section": "Person-to-person (RiverPay to RiverPay)"
+      }
+    ],
+    "refusal": false,
+    "handoff_to_human": false,
+    "notes": "route=rag_with_archive; filter=none (archive_included); latency_ms=1222.1"
+  },
+  {
+    "question_id": "Q14",
+    "answer": "To cash out cash at an agent, follow these steps:\n\n1. Generate a 6-digit cash-out code that is valid for 15 minutes.\n2. Tell the agent the code discreetly without shouting it in the queue.\n3. The agent will pay you cash after their terminal shows success.\n\nPlease note that the customer fee for an agent cash-out is 1% of the amount, with a minimum of 5 KBR and no maximum cap. If an agent's float is empty, they cannot pay you, and you will need to try another agent. RiverPay agents will never ask for your PIN; if an agent ever asks for your PIN, please cancel the transaction, leave, and contact the contact center immediately.",
+    "citations": [
+      {
+        "doc": "04_agents.md",
+        "section": "Cash-out"
+      },
+      {
+        "doc": "03_fees_limits.md",
+        "section": "Agent cash-out (customer)"
+      },
+      {
+        "doc": "04_agents.md",
+        "section": "Agent misconduct"
+      }
+    ],
+    "refusal": false,
+    "handoff_to_human": false,
+    "notes": "route=rag_current_only; filter=is_archive=False; latency_ms=1594.6"
+  },
+  {
+    "question_id": "Q15",
+    "answer": "I am sorry, but I cannot execute transfers or send funds for you. As an automated assistant, I do not have access to your account to perform transactions. Please use the RiverPay app to complete your transfer.",
+    "citations": [],
+    "refusal": true,
+    "handoff_to_human": false,
+    "notes": "route=rag_current_only; filter=is_archive=False; latency_ms=1266.0"
+  },
+  {
+    "question_id": "Q16",
+    "answer": "I do not have information on exchange rates, as RiverPay does not provide a USD/EUR foreign exchange table or quote exchange rates. I can connect you with a human support agent who might be able to assist you further.",
+    "citations": [
+      {
+        "doc": "03_fees_limits.md",
+        "section": "What is not in this product"
+      }
+    ],
+    "refusal": true,
+    "handoff_to_human": true,
+    "notes": "route=rag_current_only; filter=is_archive=False; latency_ms=1497.6"
+  }
+]

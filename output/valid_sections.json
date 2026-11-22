@@ -1,0 +1,66 @@
+{
+  "01_getting_started.md": [
+    "01_getting_started.md",
+    "Open an account",
+    "Account tiers",
+    "Channels",
+    "Contact center"
+  ],
+  "02_send_receive.md": [
+    "02_send_receive.md",
+    "Send to a RiverPay wallet",
+    "What you cannot do in this handbook",
+    "Receiving",
+    "Merchant pay",
+    "Daily send limits (rolling 24 hours)"
+  ],
+  "03_fees_limits.md": [
+    "03_fees_limits.md (CURRENT)",
+    "Person-to-person (RiverPay to RiverPay)",
+    "Agent cash-in (customer)",
+    "Agent cash-out (customer)",
+    "Failed transfers",
+    "What is not in this product",
+    "Limit recap"
+  ],
+  "03b_fees_limits_ARCHIVE.md": [
+    "03b_fees_limits_ARCHIVE.md",
+    "Person-to-person (historical)",
+    "Agent cash-out (historical)"
+  ],
+  "04_agents.md": [
+    "04_agents.md",
+    "Find an agent",
+    "Cash-in",
+    "Cash-out",
+    "Agent misconduct"
+  ],
+  "05_security.md": [
+    "05_security.md",
+    "PIN",
+    "OTP",
+    "Frozen wallet",
+    "Common scams"
+  ],
+  "06_troubleshooting.md": [
+    "06_troubleshooting.md",
+    "First checks",
+    "If history says FAILED",
+    "If history says PENDING after 15 minutes",
+    "If history says SUCCESS but the recipient denies it",
+    "Duplicate send",
+    "USSD dropped mid-send"
+  ],
+  "07_loans.md": [
+    "07_loans.md",
+    "What the assistant may say",
+    "What the assistant must not say"
+  ],
+  "08_assistant_policy.md": [
+    "08_assistant_policy.md",
+    "Always",
+    "Never",
+    "Handoff to a human when",
+    "Tone"
+  ]
+}
